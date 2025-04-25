@@ -1,0 +1,43 @@
+body {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    letter-spacing: 3px;
+    border-bottom: solid lightgray 1px;
+    margin-top: 75px;
+}
+
+h2 {
+    color: #006EB6;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+body {
+    text-align: left;
+    max-width: 600px;
+}
+
+#top {
+    margin-top: 50px;
+}
+
+#italicized {
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+img {
+    width: 150px;
+}
