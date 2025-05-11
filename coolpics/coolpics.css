@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+body {
+    font-family: Mooli, Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(237, 235, 235);
+}
+
+header {
+    background-color: #52489c;
+    color: #ebebeb;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+button {
+    background-color: #52489c;
+    border: none;
+    color: #ebebeb;
+    padding: 5px;
+    font-size: x-large;
+}
+
+nav a {
+    color: #ebebeb;
+    margin: 10px;
+}
+
+main {
+    justify-items: center;
+    color: #333;
+}
+
+img {
+    border: solid white 10px;
+    box-shadow: 10px 5px 5px rgb(103, 103, 103);
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #52489c;
+    color: #ebebeb;
+    padding: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    button {
+        display: none;
+    }
+
+    nav a {
+        margin-right: 50px;
+    }
+}
