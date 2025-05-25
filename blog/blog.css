@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #006d77;
-    color: #ACD7D2;
+    color: white;
     padding: 20px;
     display: flex;
     padding-left: 75px;
@@ -23,7 +23,7 @@ nav {
 }
 
 a {
-    color: #ACD7D2;
+    color: white;
     text-decoration: none;
     padding: 30px;
 }
@@ -60,5 +60,5 @@ footer {
     background-color: #006d77;
     display: grid;
     padding: 25px;
-    color: #ACD7D2;;
+    color: white;
 }
