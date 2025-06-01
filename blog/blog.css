@@ -1,64 +1,64 @@
 body {
-    color: #00373D;
-    background-color: #F4F1DE;
+    font-family: 'Georgia', serif;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: white;
+    color: black;
 }
 
 header {
-    background-color: #006d77;
-    color: white;
-    padding: 20px;
-    display: flex;
-    padding-left: 75px;
-}
-
-h1 {
-    font-size: 50;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 nav {
-    margin-left: 400px;
-    margin-top: 30px;
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+    padding: 15px;
+    text-align: right;
 }
 
-a {
-    color: white;
+nav a {
+    margin-right: 75px;
     text-decoration: none;
-    padding: 30px;
+    color: darkred;
+    font-weight: bold;
 }
 
-.section-title {
-    margin: 50px;
-    margin-left: 150px;
-    font-size: 28px;
-}
-
-#section-one, #section-two {
+main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-img {
-    width: 125px;
-    margin: auto;
+    padding: 30px;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
 }
 
 .book {
     display: grid;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 25px;
-    margin-top: 0px;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
 }
 
-footer {
-    background-color: #006d77;
-    display: grid;
-    padding: 25px;
-    color: white;
+.rating {
+    grid-column: 1/2;
+    border-right: 2px solid gold;
+    text-align: right;
+    padding: 10%;
+}
+
+.book-info h2 {
+    grid-column: 2/3;
+    color: darkred;
+}
+
+.book-info img {
+    max-width: 150px;
+    display: block;
+}
+
+#filter {
+    border: 2px solid gold;
+    grid-column: 2/3;
+    padding: 10px;
+    margin: 20px;
+    margin-right: 75px;
 }
