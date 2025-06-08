@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia Smith - Credit Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="card.js" defer></script>
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+   <form id="credit-card">
+    <div id="floating">
+    <div id="card-front">
+        <p>Total: $199</p>
+        <div id="number-box">
+            <label for="cardNumber">Card Number</label><br>
+            <input type="text" pattern="[0-9]{16}" id="card-number" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+        </div>
+        <div id="holder-box">
+            <label for="cardHolder">Card Holder</label><br>
+            <input type="text" id="card-holder" name="cardHolder" placeholder="e.g. John Doe"required>
+        </div>
+        <div id="expiration">
+            <label for="monthExpiration">Expiration</label>
+            <input type="text" id="month-expiration" name="monthExpiration" pattern="[0-9]{2}" placeholder="XX" required>
+            <input type="text" id="year-expiration" name="yearExpiration" pattern="[0-9]{2}" placeholder="XX" required>
+        </div>
+    </div>
+    <div id="card-back">
+        <div id="swipey-thing"></div>
+        <div id="cvc-box">
+            <label for="cvc">CVC/CVV</label><br>
+            <input type="text" pattern="[0-9]{3}" id="cvc" name="cvc" placeholder="XXX" required>
+        </div>
+    </div>
+    </div>
+    <button type="submit">Submit</button>
+   </form> 
+</body>
+</html>
