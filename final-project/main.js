@@ -1,3 +1,6 @@
+// used ChatGPT with JavaScript
+
+
 // Home JS
 
 const funFacts = [
@@ -21,10 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     factElement.textContent = funFacts[randomIndex];
   }
 });
-
-
-
-
 
 
 // Counter JS
@@ -83,7 +82,7 @@ function updateTotal() {
   totalDisplay.textContent = `Total number of pennies: ${total}`;
 }
 
-function renderPennies() {
+function displayPennies() {
   const container = document.getElementById("added-pennies");
   const noneMessage = document.getElementById("none-message");
 
@@ -122,7 +121,7 @@ function renderPennies() {
 }
 
 filterSelect.addEventListener("change", () => {
-  renderPennies(); // Re-render based on new filter
+  displayPennies(); // Re-display based on new filter
 });
 
 addButton.addEventListener("click", () => {
@@ -162,24 +161,24 @@ addButton.addEventListener("click", () => {
   }
 
   updateTotal();
-  renderPennies();
+  displayPennies();
 
   yearInput.value = "";
   quantityInput.value = 1;
 });
 
-// Delete All functionality
+// Delete Button
 deleteButton.addEventListener("click", () => {
   if (confirm("Are you sure you want to delete all pennies?")) {
     pennyData.length = 0;
     originalPennyData.length = 0;
 
     updateTotal();
-    renderPennies();
+    displayPennies();
   }
 });
 
-// Export functionality
+// Export Button
 exportButton.addEventListener("click", () => {
   const dataStr = JSON.stringify(pennyData);
   const blob = new Blob([dataStr], { type: "application/json" });
@@ -193,7 +192,7 @@ exportButton.addEventListener("click", () => {
   URL.revokeObjectURL(url);
 });
 
-// Import functionality
+// Import Button
 importButton.addEventListener("click", () => {
   const input = document.createElement("input");
   input.type = "file";
@@ -224,7 +223,7 @@ importButton.addEventListener("click", () => {
           });
 
           updateTotal();
-          renderPennies();
+          displayPennies();
           alert("Import successful!");
         } else {
           alert("Invalid data format!");
@@ -240,6 +239,6 @@ importButton.addEventListener("click", () => {
   input.click();
 });
 
-// Initial render in case you want to initialize anything on load
-renderPennies();
+// Initial display in case you want to initialize anything on load
+displayPennies();
 updateTotal();
