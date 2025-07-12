@@ -14,18 +14,95 @@
             <a href="counter.html">Counter</a>
         </nav>
     </header>
-    <main>
-        <div id="add-box">
-            <h3>Add New</h3>
-            <p>Enter year minted:</p>
-            <input type="text" placeholder="XXXX">
-            <button>Add</button>
+    <main id="counter-main">
+        <div id="side-menu">
+            <div id="add-box">
+                <h2>Add New Penny</h2>
+                <label for="year">Enter year minted:</label>
+                <input id="year" type="" placeholder="XXXX" min="1787" max="2025">
+                <label for="quantity">Quantity:</label>
+                <input id="quantity" type="number" value="1" min="1">
+                <button>Add Penny</button>
+            </div>
+            <div id="save-info">
+                <button>Export data</button>
+                <button>Import data</button>
+                <button>Delete All</button>
+            </div>
         </div>
-        <h1>Penny Counter!</h1>
-        <!-- add a filter option -->
-        <p>Total number of pennies: </p>
-
-        
+        <div id="counter-display">
+            <h1>Penny Counter!</h1>
+            <p>Total number of pennies: 0</p>
+            <label for="filter">Sort by:</label>
+            <select id="filter" name="filter">
+                <option value="">Oldest to Newest</option>
+                <option value="">Newest to Oldest</option>
+                <option value="">Design Categories</option>
+            </select>
+            <div id="added-pennies">
+                <p>You have not added any pennies to the counter.</p>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <div id="penny2">
+                    <img src="images/1024px-NNC-US-1909-1C-Lincoln_Cent_(wheat) (2).jpg" alt="penny design">
+                    <p>Year: 1955</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <div id="penny1">
+                    <img src="images/512px-2005_Penny_Rev_Unc_D.png" alt="penny design">
+                    <p>Year: 2011</p>
+                    <p>Quantity: 3</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy 2025</p>

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Header */
+
 body {
     margin: 0;
     font-family: "Libre Franklin", Arial, sans-serif;
@@ -44,6 +46,8 @@ nav a:hover {
 img {
     width: 200px;
 }
+
+/* Home page CSS */
 
 #banner {
     display: grid;
@@ -130,6 +134,7 @@ button {
     border-left: solid 2px #d17d61;
     font-size: 20px;
     width: 40%;
+    margin: 15px;
 }
 
 button:hover {
@@ -213,7 +218,71 @@ main a:hover {
 
 /* Counter page CSS */
 
+#counter-main {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* sidebar width + main content */
+  align-items: start;
+  gap: 20px;
+  padding: 40px;
+}
 
+#side-menu {
+    position: sticky;
+    top: 20px;
+}
+
+#side-menu button {
+    width: 70%;
+}
+
+#add-box {
+    grid-column: 1/2;
+    display: grid;
+    margin-top: 60px;
+    gap: 30px;
+    place-items: center;
+}
+
+#add-box h2, #add-box p {
+    margin: 0px;
+}
+
+#add-box input {
+    width: 50%;
+    height: 200%;
+    font-size: large;
+    text-align: center;
+}
+
+#save-info {
+    display: grid;
+    place-items: center;
+    margin-top: 80px;
+}
+
+#save-info button {
+    margin: 10px;
+}
+
+#counter-display {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+#added-pennies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#added-pennies img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+/* Footer */
 
 footer {
     background-color: #A0BDAD;
