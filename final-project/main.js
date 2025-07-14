@@ -1,4 +1,4 @@
-// used ChatGPT with JavaScript
+// used various AI with JavaScript
 
 
 // Home JS
